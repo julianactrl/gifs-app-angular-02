@@ -8,14 +8,11 @@ export const routes: Routes =  [
   },
   {
     path: 'trending',
-    loadComponent: () => import('')
+    loadComponent: () => import('./gifs/pages/trending-page/trending-page.component'),
   },
   {
     path: 'search',
-    loadComponent: () => import('')
+    loadComponent: () => import('./gifs/pages/search-page/search-page.component'),
   },
-  {
-    path: '**',
-    redirectTo: 'dashboard'
-  }
+  { path: '**', redirectTo: '' }
 ]
